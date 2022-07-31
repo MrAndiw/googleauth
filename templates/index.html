@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+    <title>Google SignIn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:70px; }
+    </style>
+</head>
+<body style="background-color: rgb(227, 220, 240);">
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center" style="background-color: #F4EEFF;">
+            <img class="d-block mx-auto mb-4" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" width="150" height="50">
+            <h1 class="display-5 fw-bold" style="color: #424874;"> Social Authentication</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="color: #424874;">Login or Register with: </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google"></span> SignIn with Google</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
