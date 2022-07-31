@@ -52,6 +52,6 @@ func main() {
 		t, _ := template.ParseFiles("templates/index.html")
 		t.Execute(res, false)
 	})
-	log.Println("listening on 127.0.0.1:3000")
-	log.Fatal(http.ListenAndServe(":3000", p))
+	log.Println("listening on https://sheltered-mesa-80884.herokuapp.com")
+	log.Fatal(http.ListenAndServe("https://sheltered-mesa-80884.herokuapp.com", p))
 }
