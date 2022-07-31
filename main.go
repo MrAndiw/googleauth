@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"os"
 
 	"log"
 
@@ -52,6 +53,7 @@ func main() {
 		t, _ := template.ParseFiles("templates/index.html")
 		t.Execute(res, false)
 	})
-	log.Println("listening on https://sheltered-mesa-80884.herokuapp.com")
-	log.Fatal(http.ListenAndServe("https://sheltered-mesa-80884.herokuapp.com", p))
+	port := os.Getenv("PORT")
+	log.Println("listening on :" + port)
+	log.Fatal(http.ListenAndServe(":"+port, p))
 }
